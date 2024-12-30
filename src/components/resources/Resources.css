@@ -1,5 +1,6 @@
 .resources {
-    padding: 10vh 5vw;
+    padding: 4vh 5vw;
+    padding-bottom: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,10 +16,11 @@
 }
 
 .resources-inner {
+    /* background-color: yellow; */
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap */
     justify-content: center; /* Center the items */
-    align-items: flex-start; /* Align items to the top */
+    align-items: center; /* Align items to the top */
     width: 100%;
 }
 
@@ -38,30 +40,32 @@
 .resources-art-underline {
     height: 9px;
     background-color: #FFAD62;
-    width: 40%;
+    width: 100%;
     position: absolute;
     left: 0;
-    bottom: -5px; /* Adjusted position for better visibility */
+    bottom: -8px; /* Adjusted position for better visibility */
 }
 
 .resources-info {
-    flex: 1 1 60%; /* Allow it to grow and shrink, with a base width of 60% */
+    flex: 1 1 60%; /*Allow it to grow and shrink, with a base width of 60%*/
     max-width: 600px; /* Set a max width */
-    margin: 0 20px; /* Add horizontal margin */
+    margin: 0px 20px; /* Add horizontal margin */
+    /* background-color: aqua; */
 }
 
 .resources-info-inner {
     background-color: white;
-    border-radius: 15px; /* Add border radius */
+    border-radius: 25px; /* Add border radius */
     padding: 5vh 3vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     display: flex;
+    gap: 8px; /* Add gap between items */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items */
 }
 
 .resources-info-inner p {
-    font-size: 1rem; /* Adjust font size for better readability */
+    font-size: 1.2rem; /* Adjust font size for better readability */
     font-weight: 400;
     color: #EC7100;
     text-decoration: underline;
@@ -75,6 +79,7 @@
 }
 
 #resource-view-more {
+    margin: 1ch 0;
     padding: 10px 20px;
     border: 2px solid #EC7100;
     border-radius: 50px;

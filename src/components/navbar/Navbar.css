@@ -1,23 +1,29 @@
 /* Basic Navbar Styles */
 .navbar {
+  top: 0ch;
+  height: 12vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  justify-content: space-between;
   background-color: #fff;
-  box-shadow: inset;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+  padding: 0 5vw;
 }
 
 .nav-icon img {
-  height: 50px;
+  height: 10vh;
 }
 
 .nav-right {
+  /* background-color: aqua; */
   display: flex;
-  align-items: center;
+  left:0ch;
 }
 
 .nav-items {
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
   display: flex;
   list-style: none;
   margin: 0;
@@ -25,14 +31,15 @@
 }
 
 .nav-items li {
+  padding-right: 10px;
   margin-left: 20px;
 }
 
 .nav-items li a {
   text-decoration: none;
-  color: #333;
+  color: #6B6B6B;
   font-size: 1rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .vibhinn-text {
@@ -57,10 +64,20 @@
 }
 
 .nav-social a {
+  /* background-color: #43a047; */
+  display: flex;
+  justify-content: center;
+  align-items:center;
   margin-left: 15px;
-  color: #333;
-  font-size: 1.5rem;
+  color: #e1306c;
+  font-size: 1.8rem;
+  transition: transform 0.3s;
 }
+
+.nav-social:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 
 /* Hamburger Icon (for mobile) */
 .hamburger {

@@ -148,7 +148,7 @@ const BeAnAlly = () => {
               required
             />
             <label htmlFor="pledge">
-              I understand the importance of being an ally...
+            I understand the importance of being an ally and commit to the actions listed above to support the LGBTQ+ community.
             </label>
           </div>
 

@@ -1,6 +1,6 @@
 footer {
     background-color: #f9e9b6;
-    padding: 10vh 7vw;
+    padding: 3vh 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@ footer {
 }
 
 .footer-separator {
-    height: 2px;
+    height: 3px;
     background-color: #E0C3A2;
     width: 100%;
 }
@@ -29,7 +29,7 @@ footer {
 }
 
 .footer-right {
-    margin-right: 5vw;
+    margin-right: 10vw;
     width: 50%;
     display: flex;
     justify-content: right;
@@ -45,7 +45,7 @@ footer {
 
 .copyright {
     background-color: #f9e9f6;
+    margin: 0px;
+    padding: 2vh;
     text-align: center;
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh;
 }

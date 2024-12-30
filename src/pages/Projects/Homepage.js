@@ -10,7 +10,7 @@ function Homepage() {
   return (
     <div className="homepage">
       <div className="homepage-image">
-        <img src={home} alt="Home"  />
+        <img src={home} alt="Home" />
       </div>
       <div className="homepage-content">
         <WhoWeAre />

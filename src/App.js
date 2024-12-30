@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 import Homepage from "./pages/Homepage/Homepage.js";
 import AboutUs from "./pages/AboutUs/AboutUs.js";
-import Projects from "./pages/Projects/Projects.js";
+import Projects from "./pages/Projects/Homepage.js";
 import BeAnAlly from "./pages/BeAnAlly/BeAnAlly";
 import "./App.css";
 

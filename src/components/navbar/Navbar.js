@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import Hamburger from "../Hamburger/Hamburger";
+import Hamburger from "../hamburger/Hamburger";
 import indradhanuLogo from "../../assets/images/indradhanu-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -36,7 +36,7 @@ const Navbar = () => {
           <li>
             <b>
               <Link to="/vibhinn" className="vibhinn-text">
-                Vibhinn'24
+                Vibhinn'25
               </Link>
             </b>
           </li>
@@ -44,24 +44,26 @@ const Navbar = () => {
             <Link to="/projects">Our Projects</Link>
           </li>
           <li>
-            <button onClick={() => scrollToSection("resources")}>Resources</button>
+            <a href="#resources">Resources</a>
           </li>
           <li>
-            <button onClick={() => scrollToSection("contact-us")}>Contact Us</button>
+            <a href="#contact-us">Contact Us</a>
           </li>
           <li>
             <Link to="/be-an-ally">Be an Ally</Link>
           </li>
-        </ul>
+        
         <div className="nav-social">
           <a
             href="https://instagram.com/indradhanu.iitd"
             target="_blank"
             rel="noopener noreferrer"
+            className="instagram-gradient"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
+        </ul>
       </div>
       {window.innerWidth < 768 && (
         <Hamburger isOpen={isMobileMenuOpen} toggleMenu={toggleMenu} />
