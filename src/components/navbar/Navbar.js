@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import "./Navbar.css";
 import Hamburger from "../hamburger/Hamburger";
 import indradhanuLogo from "../../assets/images/indradhanu-logo.png";
@@ -44,11 +45,11 @@ const Navbar = () => {
             <Link to="/projects">Our Projects</Link>
           </li>
           <li>
-            <a href="#resources">Resources</a>
-          </li>
-          <li>
-            <a href="#contact-us">Contact Us</a>
-          </li>
+          <HashLink smooth to="/#resources">Resources</HashLink>
+      </li>
+      <li>
+        <HashLink smooth to="/#contact-us">Contact Us</HashLink>
+         </li>
           <li>
             <Link to="/be-an-ally">Be an Ally</Link>
           </li>

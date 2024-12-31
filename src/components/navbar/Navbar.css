@@ -1,6 +1,6 @@
 /* Basic Navbar Styles */
 .navbar {
-  top: 0ch;
+  top: 0;
   height: 12vh;
   display: flex;
   align-items: center;
