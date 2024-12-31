@@ -1,6 +1,9 @@
 // import React, { useState } from "react";
 import "./BeAnAlly.css";
+import $ from "jquery";
+import React, { useEffect } from "react";
 
+  
 const TextInput = ({ id, label, required }) => (
   <div>
     <label htmlFor={id}>{label}</label>
@@ -37,7 +40,45 @@ const CheckboxGroup = ({ options, name }) => (
   </div>
 );
 
-const BeAnAlly = () => {
+const BeAnAlly = () => {useEffect(() => {
+  window.postToGoogle = function () {
+    const data = {
+      "entry.1308067135": $("#name").val(),
+      "entry.1732293729": $("#pronouns").val(),
+      "entry.510246480": $("#email").val(),
+      "entry.1062605281": $("#affiliation").val(),
+      "entry.1821301504": $("#knowledge").val(),
+      "entry.1479059500": $("input[name='entry.1479059500']:checked").val(),
+      "entry.1638587756": $("input[name='entry.1638587756']:checked")
+        .map(function () {
+          return this.value;
+        })
+        .get()
+        .join(", "),
+      "entry.1380397274": $("input[name='entry.1380397274']:checked").val(),
+      "entry.953590735": $("input[name='entry.953590735']:checked").val(),
+      "entry.1324685707": $("#feedback").val(),
+      "entry.1153964510": $("#pledge").is(":checked") ? "Yes" : "No",
+    };
+
+    $.ajax({
+      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfiGwQos7bPVl-NOgWZq4rN69LrlBPaqveTXLMpwg8IF3bCMg/formResponse",
+      type: "POST",
+      data,
+      dataType: "xml",
+      success: function () {
+        alert("Form submitted successfully!");
+        $("#contact-form").trigger("reset");
+      },
+      error: function () {
+        alert("Form submitted successfully!");
+        $("#contact-form").trigger("reset");
+      },
+    });
+
+    return false; // Prevent default form submission
+  };
+}, []);
   // const [showGreeting, setShowGreeting] = useState(false);
 
   // const handleGreetingToggle = () => {
@@ -53,18 +94,18 @@ const BeAnAlly = () => {
           community...
         </p>
 
-        <form
-          action="https://docs.google.com/forms/d/e/1FAIpQLSfiGwQos7bPVl-NOgWZq4rN69LrlBPaqveTXLMpwg8IF3bCMg/formResponse"
-          method="POST"
-          target="_blank"
+        <form id="contact-form" onSubmit={(e) => e.preventDefault()}
+          // action="https://docs.google.com/forms/d/e/1FAIpQLSfiGwQos7bPVl-NOgWZq4rN69LrlBPaqveTXLMpwg8IF3bCMg/formResponse"
+          // method="POST"
+          // target="_blank"
         >
           <div className="box blue">
-            <TextInput id="name" label="Name :" required />
-            <TextInput id="pronouns" label="Pronouns :" />
+            <TextInput id="name" name ="entry.1308067135" label="Name :" required />
+            <TextInput id="pronouns" name ="entry.1732293729" label="Pronouns :" />
           </div>
 
           <div className="box green">
-            <EmailInput id="email" label="Email Address :" required />
+            <EmailInput id="email" name="entry.510246480" label="Email Address :" required />
             <label htmlFor="affiliation">Affiliation with the College :</label>
             <select id="affiliation" name="entry.1062605281">
               <option value="student">Student</option>
@@ -151,8 +192,10 @@ const BeAnAlly = () => {
             I understand the importance of being an ally and commit to the actions listed above to support the LGBTQ+ community.
             </label>
           </div>
-
-          <input type="submit" value="Submit" />
+          <button type="submit" onClick={() => window.postToGoogle()}>
+            Submit
+          </button>
+          {/* <input type="submit" value="Submit" /> */}
         </form>
       </div>
 
