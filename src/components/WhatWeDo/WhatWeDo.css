@@ -33,6 +33,7 @@
 }
 
 .what-we-do-cards {
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,6 +51,7 @@
     background-color: #A5FFD4;
     border-radius: 40px;
     padding: 5vh 3vw;
+    padding-bottom: 8vh;
     width: 30%;
     height: 43vh;
 }
@@ -59,6 +61,7 @@
 }
 
 .what-we-do-card h4 {
+    /* background-color: azure; */
     font-size: 1.8rem;
     margin-top: 2vh;
     color: #286A4A;
@@ -66,7 +69,8 @@
 }
 
 .what-we-do-card p {
-    font-size: 1.3rem;
+    /* background-color: #032917; */
+    font-size: 1.1rem;
     margin-top: 2vh;
     color: #2D6C4E;
     font-weight: 500;
@@ -75,7 +79,7 @@
 
 .what-we-do-card a {
     text-decoration: none;
-    margin-top: 3vh;
+    margin-top: 0vh;
     padding: 10px 20px;
     border: 2px solid #30C67E;
     border-radius: 50px;

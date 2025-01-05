@@ -13,40 +13,41 @@ function Resources() {
         </div>
         <div className="resources-info">
           <div className="resources-info-inner">
-            <p>
+          <p>
               <a
-                href="https://forms.gle/wYz8Qgy3Xqz1DajXA"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScXBEdXlquU5R23-si4LR6BuB04Rp5_A5kcaugFxAyTYrtgRA/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ViभिNN 2024 - All India Queer Collective Conference
+                ViभिNN 2025 - Inaugral Ceremony
+              </a>
+            </p>
+
+            <p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpcohuEIfa-0VH-N604elanHbePeKgFj8hea7SRrzX_s1b3Q/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ViभिNN 2025 - All India Queer Collective Conference
               </a>
             </p>
             <p>
               <a
-                href="https://forms.gle/stDQ1MJm8CBKQTi88"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdo3MpNqyDQZLLKZm4ZsSsp3xhUTkFsMBSNzhiFM2H8svNTIA/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ViभिNN 2024 - Queer Talent Show
+                ViभिNN 2025 - Queer's Got Talent'
               </a>
             </p>
             <p>
               <a
-                href="https://forms.gle/xBkw4H4EG2TJcBE48"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdo3MpNqyDQZLLKZm4ZsSsp3xhUTkFsMBSNzhiFM2H8svNTIA/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ViभिNN 2024 - Townhall Meeting RSVP
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://forms.gle/1tngdb9wh3Te9UXq6"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ViभिNN 2024 - Pride Parade RSVP
+                ViभिNN 2025 - Pride Parade RSVP
               </a>
             </p>
             <a

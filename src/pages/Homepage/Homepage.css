@@ -8,8 +8,12 @@
 
 .homepage-image {
     /* background-color: aqua; */
-    width: 70vw;
+    width: 80vw;
     margin: auto;
+}
+
+.homepage-image img{
+    width:70vw;
 }
 
 *{

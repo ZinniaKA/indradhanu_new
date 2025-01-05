@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Homepage from "./pages/Homepage/Homepage.js";
 import AboutUs from "./pages/AboutUs/AboutUs.js";
-import Projects from "./pages/Projects/Homepage.js";
+import Projects from "./pages/Projects/Projects.js";
 import BeAnAlly from "./pages/BeAnAlly/BeAnAlly";
 import "./App.css";
 
